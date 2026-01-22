@@ -6,7 +6,9 @@ use DI\ContainerBuilder;
 use Teapodsoft\Applications\Settings\Settings;
 use Teapodsoft\Applications\Settings\SettingsInterface;
 
-// Загрузка контейнера с настройками для дальнейшего использования внутри приложения
+/**
+ * Загрузка контейнера с настройками для дальнейшего использования внутри приложения
+ */
 return function (ContainerBUilder $containerBuilder) {
     $containerBuilder->addDefinitions([
         SettingsInterface::class => function () {
