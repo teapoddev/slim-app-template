@@ -7,6 +7,12 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Server\MiddlewareInterface as Middleware;
 use Psr\Http\Server\RequestHandlerInterface as RequestHandler;
 
+/**
+ * ResponseJsonMiddleware
+ *
+ * @package Teapodsoft\Middleware
+ * @description Обработка результата, чтобы передавались только JSON ответы
+ */
 class ResponseJsonMiddleware implements Middleware
 {
 

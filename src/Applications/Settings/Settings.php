@@ -2,6 +2,12 @@
 
 namespace Teapodsoft\Applications\Settings;
 
+/**
+ * Settings
+ *
+ * @package Teapodsoft\Application\Settings
+ * @description Класс для работы с настройками, которые указаны в configs/settings.php файле
+ */
 readonly class Settings implements SettingsInterface
 {
 

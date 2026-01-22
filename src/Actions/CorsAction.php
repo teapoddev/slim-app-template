@@ -6,12 +6,12 @@ use Psr\Http\Message\ResponseInterface as Response;
 use Psr\Http\Message\ServerRequestInterface as Request;
 
 /**
- * TestAction
+ * CorsAction
  *
  * @package Teapodsoft\Actions
- * @description Обработчик логики Route '/'
+ * @description Класс для работы с Options для CORS
  */
-final class TestAction extends Action
+final class CorsAction extends Action
 {
 
     /**
@@ -22,19 +22,8 @@ final class TestAction extends Action
      */
     public function __invoke(Request $request, Response $response, array $args = []): Response
     {
-        $response->getBody()->write($this->json($this->getData()));
+        //TODO: Добавить сюда свою логику работы с CORS
         return parent::__invoke($request, $response, $args);
-    }
-
-    /**
-     * @return array
-     */
-    private function getData(): array
-    {
-        return [
-            'time' => time(),
-            'date' => date('Y-m-d H:i:s', time()),
-        ];
     }
 
 }

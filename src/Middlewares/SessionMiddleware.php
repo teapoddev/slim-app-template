@@ -7,6 +7,12 @@ use Psr\Http\Message\ServerRequestInterface as Request;
 use Psr\Http\Server\MiddlewareInterface as Middleware;
 use Psr\Http\Server\RequestHandlerInterface as RequestHandler;
 
+/**
+ * SessionMiddleware
+ *
+ * @package Teapodsoft\Middlewares
+ * @description Обработчик для работы с сессией
+ */
 class SessionMiddleware implements Middleware
 {
 

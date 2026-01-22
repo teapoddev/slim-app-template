@@ -12,7 +12,7 @@ use Psr\Http\Message\ResponseInterface as Response;
  * @package Teapodsoft\Actions
  * @description Абстрактный класс обработки действий для Routes
  */
-abstract class Action
+abstract class Action implements InterfaceAction
 {
 
     /**
@@ -33,6 +33,15 @@ abstract class Action
     public function __invoke(Request $request, Response $response, array $args = []): Response
     {
         return $response;
+    }
+
+    /**
+     * @param array $data
+     * @return false|string
+     */
+    protected function json(array $data): false|string
+    {
+        return json_encode($data);
     }
 
 }

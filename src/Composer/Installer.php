@@ -14,7 +14,7 @@ class Installer
 {
 
     /**
-     * Обработчик postInstall для Composer
+     * Обработчик postInstall для Composer. Запускается после того как прошла обработка команды composer install
      *
      * @param Event $event
      * @return void

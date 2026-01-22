@@ -5,6 +5,12 @@ namespace Teapodsoft\Applications\ResponseEmitter;
 use Psr\Http\Message\ResponseInterface as Response;
 use Slim\ResponseEmitter as SlimResponseEmitter;
 
+/**
+ * ResponseEmitter
+ *
+ * @package Teapodsoft\Application\ResponseEmitter
+ * @description Класс для работы с заголовками
+ */
 class ResponseEmitter extends SlimResponseEmitter
 {
 

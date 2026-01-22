@@ -2,6 +2,12 @@
 
 namespace Teapodsoft\Applications\Settings;
 
+/**
+ * SettingsInterface
+ *
+ * @package Teapodsoft\Application\Settings
+ * @description Интерфейс для работы с настройками
+ */
 interface SettingsInterface
 {
 
