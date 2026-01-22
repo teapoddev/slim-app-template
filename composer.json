@@ -22,9 +22,6 @@
     ],
     "require": {
         "php": ">=8.4",
-        "ext-json": "*",
-        "guzzlehttp/guzzle": "^7.0",
-        "nesbot/carbon": "3.11.*",
         "php-di/php-di": "^7.1",
         "slim/psr7": "1.8.*",
         "slim/slim": "4.*",
@@ -33,6 +30,7 @@
         "teapodlibs/env": "1.0.0"
     },
     "require-dev": {
+        "ext-json": "*",
         "jangregor/phpstan-prophecy": "2.*",
         "phpspec/prophecy-phpunit": "v2.4.*",
         "phpstan/extension-installer": "1.4.*",
@@ -64,7 +62,6 @@
         "Teapodsoft\\Composer\\Installer::postInstall": {
             "copyFiles": [
                 {
-                    ".env.dist": ".env",
                     "secrets/secrets.example.json": "secrets/secrets.json"
                 }
             ],
