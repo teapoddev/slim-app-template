@@ -4,8 +4,8 @@
     "type": "project",
     "license": "TeapodSoft",
     "minimum-stability": "stable",
-    "version": "1.0.0",
-    "revision": "20260121",
+    "version": "1.1.0",
+    "revision": "20260126",
     "authors": [
         {
             "name": "Yury Pavlushchenko",
@@ -22,12 +22,13 @@
     ],
     "require": {
         "php": ">=8.4",
+        "composer/composer": "*",
         "php-di/php-di": "^7.1",
         "slim/psr7": "1.8.*",
         "slim/slim": "4.*",
-        "composer/composer": "*",
+        "teapodlibs/env": "1.0.0",
         "teapodlibs/secrets": "1.0.0",
-        "teapodlibs/env": "1.0.0"
+        "zircote/swagger-php": "^6.0"
     },
     "require-dev": {
         "ext-json": "*",
